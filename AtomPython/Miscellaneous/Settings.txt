@@ -1,0 +1,15 @@
+atom packages
+ fonts
+  Courier Prime Code - font family
+ atom-ide-ui
+ ide-python
+ autocomplete-python
+ Hydrogen
+  View output in the dock by default
+ atom-ide-debugger-python
+
+
+Stylesheet
+atom-workspace {
+ font-family: Courier Prime Code;
+}
