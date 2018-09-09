@@ -28,3 +28,4 @@ for i in range(0,len(tableData[0]),1):
         string = string + " " + value.rjust(colWidths[ii])
     #print out the string
     print(string)
+#testing
