@@ -13,3 +13,7 @@ Stylesheet
 atom-workspace {
  font-family: Courier Prime Code;
 }
+
+Pyls not working:
+    python -m pip uninstall python-language-server
+    python -m pip install python-language-server[all]==0.20.0
