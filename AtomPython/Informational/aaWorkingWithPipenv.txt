@@ -1,0 +1,23 @@
+-set directory
+cd Documents\GitHub\hello-world\AtomPython\MathPython
+
+-check project folder
+pipenv --where
+
+-check virtual environment
+pipenv --venv
+
+-start shell
+pipenv shell
+
+-lock the environment
+pipenv lock
+
+-install dependencies
+pipenv install --dev
+
+-install dependencies in prd
+pipenv install --ignore-pipfile
+
+-show installed modules
+pipenv graph
