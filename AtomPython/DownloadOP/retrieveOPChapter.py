@@ -133,7 +133,7 @@ def saveOnePieceChapterFiles(chapter, saveOutputPath):
 
 if __name__ == '__main__':
     # chapter to grab
-    chapter = '925'
+    chapter = '926'
     # where to make the new folder
     saveOutputPath = 'C:\\Users\\Alex Trim\\Downloads\\OnePiece'
     # execute primary subroutine
