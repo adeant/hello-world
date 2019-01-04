@@ -44,7 +44,7 @@ class ElectricCar(Car):
         """print desc of battery"""
         print("this car has a " + str(self.battery_size) + "-kWh battery")
 
-    def fill_gas_tank():
+    def fill_gas_tank(self):
         """override non-existent method of parent class"""
         print("no can do")
 
@@ -68,4 +68,4 @@ my_new_car.read_odometer()
 
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 print(my_tesla.get_descriptive_name())
-my_tesla.battery.describe_battery()
+my_tesla.describe_battery()
