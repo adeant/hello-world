@@ -31,7 +31,8 @@ def retrieveDataMain():
         assessmentArea = area.attrs.get('value')
         formData = {
             "sortBy": "Address", 
-            "AssessmentArea": assessmentArea
+            "AssessmentArea": assessmentArea,
+            "search": "salesByArea"
         }
         resultPageResponse = session.post(
             'https://www.cityofmadison.com/assessor/property/salesbyarearesults.cfm',
