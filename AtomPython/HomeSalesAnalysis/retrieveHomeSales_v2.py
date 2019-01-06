@@ -13,16 +13,13 @@ def retrieveDataMain():
         ',Parcel Number' + ',Units' + ',Living Area 2nd Floor (sq ft)' + \
         ',Full Baths' + ',Garage 2 Type' + ',Garage 2 Size (sq ft)' + \
         ',Living Area 3rd Floor (sq ft)' + ',Half Baths' + ',Finished Attic'
-    
     with open(filename, 'w') as file_object:
         file_object.write(header)
-    
     # go to the main web page to get the options
     session = requests.Session()
     mainPageResponse = session.get('https://www.cityofmadison.com/assessor/property/salesbyarea.cfm')
     mainPageSoup = BeautifulSoup(mainPageResponse.content, 'html.parser')
     areaOptions = mainPageSoup.find(id='AssessmentArea').find_all("option")
-    
     # loop over the options
     for area in areaOptions:
         count = 0
@@ -47,7 +44,7 @@ def retrieveDataMain():
             )
         for table in resultsTables:
             count += 1
-            formattedTable = formtTableData(assessmentArea, table)
+            formattedTable = formatTableData(assessmentArea, table)
             outputList.append(','.join(formattedTable.details))
         
         # output data to file
@@ -62,7 +59,7 @@ def retrieveDataMain():
             )
 
 
-class formtTableData():
+class formatTableData():
     def __init__(self, assessmentArea, htmlTable):
         """htmlTable is a list"""
         # get the cells from the htmlTable
@@ -85,16 +82,16 @@ class formtTableData():
             tableCells[4].text.strip(),
             tableCells[5].text.strip(),
             finishedBasement,
-            garageOneInfo.getType(),
-            garageOneInfo.getSize(),
+            garageOneInfo.type,
+            garageOneInfo.size,
             tableCells[8].text.strip(),
             salesPrice,
             tableCells[10].text.strip(),
             tableCells[12].text.strip(),
             tableCells[14].text.strip(),
             tableCells[15].text.strip(),
-            garageTwoInfo.getType(),
-            garageTwoInfo.getSize(),
+            garageTwoInfo.type,
+            garageTwoInfo.size,
             tableCells[24].text.strip(),
             tableCells[25].text.strip(),
             tableCells[26].text.strip()
@@ -112,15 +109,7 @@ class formatGarageData():
         else:
             self.type = ''
             self.size = ''
-    
-    def getType(self):
-        return self.type
-
-    def getSize(self):
-        return self.size
 
 
 if __name__ == '__main__':
     retrieveDataMain()
-# loop over the possible area values, use date sort
-# submit to get the home sales data

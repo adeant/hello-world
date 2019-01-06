@@ -1,4 +1,6 @@
 {
+    "python.pythonPath": "C:\\Users\\Alex Trim\\.virtualenvs\\HomeSalesAnalysis-Aot6BjVv\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.analysis.disabled": ["unresolved-import"]
+    "python.venvPath": "C:\\Users\\Alex Trim\\.virtualenvs"
 }

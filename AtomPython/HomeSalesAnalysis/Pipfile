@@ -9,6 +9,7 @@ verify_ssl = true
 bs4 = "*"
 selenium = "*"
 requests = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.6"
