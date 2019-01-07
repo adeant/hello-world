@@ -5,14 +5,15 @@ import requests
 
 def retrieveDataMain():
     # setup file
-    filename = 'homeSalesData.txt'
+    filename = 'homeSalesData.csv'
     header = 'Assessment Area' + ',Address' + ',Style' + ',Stories' + \
-        ',Year Built' + ',Living Area 1st Floor (sq ft)' + \
+        ',Year Built' + ',Living Area 1st Floor sq ft' + \
         ',Bedrooms' + ',Finished Basement' + ',Garage 1 Type' + \
-        ',Garage 1 Size (sq ft)' + ',Sale Date' + ',Sales Price' + \
-        ',Parcel Number' + ',Units' + ',Living Area 2nd Floor (sq ft)' + \
-        ',Full Baths' + ',Garage 2 Type' + ',Garage 2 Size (sq ft)' + \
-        ',Living Area 3rd Floor (sq ft)' + ',Half Baths' + ',Finished Attic'
+        ',Garage 1 Size sq ft' + ',Sale Date' + ',Sales Price' + \
+        ',Parcel Number' + ',Units' + ',Living Area 2nd Floor sq ft' + \
+        ',Full Baths' + ',Garage 2 Type' + ',Garage 2 Size sq ft' + \
+        ',Living Area 3rd Floor sq ft' + ',Half Baths' + ',Finished Attic'
+    header = header.replace(' ','_')
     with open(filename, 'w') as file_object:
         file_object.write(header)
     # go to the main web page to get the options

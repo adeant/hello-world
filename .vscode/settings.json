@@ -2,5 +2,8 @@
     "python.pythonPath": "C:\\Users\\Alex Trim\\.virtualenvs\\HomeSalesAnalysis-Aot6BjVv\\Scripts\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.venvPath": "C:\\Users\\Alex Trim\\.virtualenvs"
+    "python.venvPath": "C:\\Users\\Alex Trim\\.virtualenvs",
+    "python.dataScience.jupyterServerURI": "local",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false
 }
