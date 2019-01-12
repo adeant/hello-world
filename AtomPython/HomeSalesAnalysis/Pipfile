@@ -13,6 +13,7 @@ pylint = "*"
 numpy = "*"
 pandas = "*"
 bokeh = "*"
+pyyaml = "*"
 
 [requires]
 python_version = "3.6"
