@@ -4,6 +4,4 @@
     "python.linting.enabled": true,
     "python.venvPath": "C:\\Users\\Dean\\.virtualenvs",
     "python.dataScience.jupyterServerURI": "local",
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false
 }

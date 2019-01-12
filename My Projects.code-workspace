@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\Dean\\Documents\\GitHub\\HomeSalesAnalysis"
+		},
+		{
+			"path": "C:\\Users\\Dean\\Documents\\GitHub\\DownloadOP"
+		},
+		{
+			"path": "C:\\Users\\Dean\\Documents\\GitHub\\RemotingProject"
+		},
+		{
+			"path": "C:\\Users\\Dean\\Documents\\GitHub\\WebProjectExample"
+		}
+	],
+	"settings": {
+		"gitlens.codeLens.enabled": false,
+		"gitlens.currentLine.enabled": false
+	}
+}
